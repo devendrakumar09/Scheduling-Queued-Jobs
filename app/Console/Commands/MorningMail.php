@@ -2,9 +2,10 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\GoodMorning;
 use Illuminate\Console\Command;
 
-class MnrnigMail extends Command
+class MorningMail extends Command
 {
     /**
      * The name and signature of the console command.
@@ -18,7 +19,7 @@ class MnrnigMail extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Daily Good morning  Email At 8:00 am tot all users';
 
     /**
      * Create a new command instance.
@@ -37,6 +38,6 @@ class MnrnigMail extends Command
      */
     public function handle()
     {
-        return 0;
+    //    dispatch( new GoodMorning);
     }
 }
